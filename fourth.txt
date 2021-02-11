@@ -49,4 +49,126 @@ nothing to commit, working tree clean
 MacBook-Air-de-tretec:Learn_git_again tretecmac$ 
   [Restauré 11 févr. 2021 à 11:45:59 PM]
 Last login: Thu Feb 11 23:45:59 on ttys000
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ remove third.txt
+-bash: remove: command not found
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git rm --cached third.txt
+rm 'third.txt'
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git add .
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git commit -m"fill in fourth.txt"
+[master aef276e] fill in fourth.txt
+ 1 file changed, 52 insertions(+)
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git log
+commit aef276ec77815d9fb96167ff7157c11d5b16a532 (HEAD -> master)
+Author: saraArour <arour_sara@hotmail.com>
+Date:   Thu Feb 11 23:50:35 2021 +0100
+
+    fill in fourth.txt
+
+commit ef8358a89a4e3dc72cdbd758182a59ec5e27894b
+Author: saraArour <arour_sara@hotmail.com>
+Date:   Thu Feb 11 23:08:55 2021 +0100
+
+    adding fourth.txt
+
+commit 6077ced5ac4e11d7157494e0a3af238edd72349a
+Author: saraArour <arour_sara@hotmail.com>
+Date:   Thu Feb 11 23:05:53 2021 +0100
+
+    adding third.txt
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git rm -- cached third.txt
+fatal: pathspec 'cached' did not match any files
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git rm --cached third.txt
+rm 'third.txt'
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git rm -- third.txt
+fatal: pathspec 'third.txt' did not match any files
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git rm --third.txt
+error: unknown option `third.txt'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git config --global core.pager cat
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ ls
+fourth.txt	third.txt
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
 MacBook-Air-de-tretec:Learn_git_again tretecmac$ 
