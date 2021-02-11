@@ -1,0 +1,52 @@
+Last login: Thu Feb 11 22:59:24 on ttys000
+MacBook-Air-de-tretec:~ tretecmac$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+MacBook-Air-de-tretec:~ tretecmac$ cd Documents/GoMyCode/git/
+MacBook-Air-de-tretec:git tretecmac$ mkdir Learn_git_again
+MacBook-Air-de-tretec:git tretecmac$ cd Learn_git_again/
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ touch third.txt
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git init
+Initialized empty Git repository in /Users/tretecmac/Documents/GoMyCode/git/Learn_git_again/.git/
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git add third.txt
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git commit -m "adding third.txt"
+[master (root-commit) 6077ced] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git log
+commit 6077ced5ac4e11d7157494e0a3af238edd72349a (HEAD -> master)
+Author: saraArour <arour_sara@hotmail.com>
+Date:   Thu Feb 11 23:05:53 2021 +0100
+
+    adding third.txt
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ touch fourth.txt
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git add fourth.txt
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git commit -m"adding fourth.txt"
+[master ef8358a] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git rm --cached third.txt
+rm 'third.txt'
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git add .
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git commit -m"removing third txt"
+On branch master
+nothing to commit, working tree clean
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git log
+commit ef8358a89a4e3dc72cdbd758182a59ec5e27894b (HEAD -> master)
+Author: saraArour <arour_sara@hotmail.com>
+Date:   Thu Feb 11 23:08:55 2021 +0100
+
+    adding fourth.txt
+
+commit 6077ced5ac4e11d7157494e0a3af238edd72349a
+Author: saraArour <arour_sara@hotmail.com>
+Date:   Thu Feb 11 23:05:53 2021 +0100
+
+    adding third.txt
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ git status
+On branch master
+nothing to commit, working tree clean
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ 
+  [Restauré 11 févr. 2021 à 11:45:59 PM]
+Last login: Thu Feb 11 23:45:59 on ttys000
+MacBook-Air-de-tretec:Learn_git_again tretecmac$ 
